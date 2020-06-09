@@ -1,6 +1,6 @@
 import React from "react";
 import cx from "classnames";
-import img from "../../Images/Landing.jpg";
+import img from "../../../Images/Landing.jpg";
 
 import styles from "./Landing.module.css";
 
