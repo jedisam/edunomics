@@ -6,7 +6,7 @@
 }
 
 .overlay {
-  position: relative;
+  position: absolute;
   top: 10;
   right: 0;
   width: 100%;
@@ -41,17 +41,37 @@
   border-radius: 35%;
 }
 
+.formData {
+  float: right;
+  margin-right: 50px;
+}
+.inputs {
+  width: 250px;
+}
+.break {
+  display: block;
+}
+.btn {
+  background: transparent;
+  border: none;
+  margin-left: 5rem;
+  margin-top: 1rem;
+}
+.mainSection {
+  margin-top: 100px;
+  margin-left: 250px;
+}
 section {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 10rem;
-  margin-bottom: 200pxs;
 }
 section h2 {
   text-transform: uppercase;
 }
+
 .article {
   width: 70%;
   margin: auto;

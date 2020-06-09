@@ -1,15 +1,20 @@
 import React from "react";
 import cx from "classnames";
-import Footer from "../footer/Footer";
 import { Link } from "react-router-dom";
+import Footer from "../footer/Footer";
 import nature from "../../../Images/nature.jpg";
 
-import styles from "./Landing.module.css";
+import styles from "./Login.module.css";
 
-const Landing = () => {
+const Login = () => {
+  let handleSubmit = (e) => {
+    e.preventDefault();
+    window.location = "/dashboard";
+  };
   return (
     <div className={styles.container}>
       <div className={styles.landing}>
+        <h3 className={styles.myheader}>Welcome to Edunomics</h3>
         <nav className={styles.nav}>
           <Link to='/login' className={styles.item}>
             Login
@@ -18,6 +23,23 @@ const Landing = () => {
             Signup
           </Link>
         </nav>
+        <form className={styles.formData} onSubmit={(e) => handleSubmit(e)}>
+          <label className={cx(styles.break, styles.labels)}>Email</label>
+          <input
+            className={cx(styles.break, styles.inputs)}
+            type='text'
+            name='email'
+          />
+          <label className={cx(styles.break, styles.labels)}>Password</label>
+          <input
+            className={cx(styles.break, styles.inputs)}
+            type='password'
+            name='password'
+          />
+          <button className={styles.btn} type='submit'>
+            Log In
+          </button>
+        </form>
         <section className={styles.mainSection}>
           <h2>Where do you want to go today?</h2>
           <p>Share your ultimate travel list with us</p>
@@ -94,4 +116,4 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+export default Login;

@@ -8,7 +8,7 @@ import styles from "./Signup.module.css";
 const Signup = () => {
   let handleSubmit = (e) => {
     e.preventDefault();
-    window.location = "/";
+    window.location = "/login";
   };
   return (
     <div className={styles.container}>

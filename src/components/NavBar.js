@@ -1,31 +1,22 @@
 import React, { Fragment } from "react";
 import {
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    NavbarBrand,
-    Nav,
-    NavItem,
-    NavLink,
-    NavbarText
-  } from 'reactstrap';
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavbarText,
+} from "reactstrap";
 
 const NavBar = () => {
   return (
     <Fragment>
-      <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">Edunomics</NavbarBrand>
-        <NavbarToggler  />
-        <Collapse  navbar>
-          <Nav className="mr-auto" navbar>
-            <NavItem>
-              <NavLink href="/components/">Components</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/">GitHub</NavLink>
-            </NavItem>
-          </Nav>
-          <NavbarText>Simple Text</NavbarText>
+      <Navbar color='light' light expand='md'>
+        <NavbarBrand href='/'>Edunomics</NavbarBrand>
+        <NavbarToggler />
+        <Collapse navbar>
+          <Nav className='mr-auto' navbar></Nav>
+          <NavbarText>Physics</NavbarText>
         </Collapse>
       </Navbar>
     </Fragment>
