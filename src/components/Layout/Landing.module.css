@@ -24,7 +24,28 @@
   justify-content: flex-end;
   flex-direction: row;
 }
+.myheader {
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+}
 
 .item {
-  margin: 15px;
+  margin: 10px;
+  padding: 4px 9px;
+}
+
+.signup {
+    border: 2px solid #ffff;
+    border-radius: 35%;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10rem;
+}
+section h2 {
+  text-transform: uppercase;
 }
